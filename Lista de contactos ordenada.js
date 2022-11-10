@@ -40,7 +40,7 @@ function eliminarContactos(id){
 
 // crear una funcion para poder actualizar los contactos
  function actualizarContactos(){
-    const contacto ={};
+    var contacto ={};
 
     contacto.id = prompt("ingrese id para actualizar");
     contacto.nombre = prompt("ingrese nombre para actualizar");
@@ -49,7 +49,7 @@ function eliminarContactos(id){
     contacto.ciudad = prompt("ingresa ciudad para actualizar");
     contacto.direccion = prompt("ingresa direccion para actualizar");
 
-    for (let i = 0; i < contactos.length; i++){
+    for (var i = 0; i < contactos.length; i++){
         if (contacto.id === contactos[i].id) (contactos[i]= contacto)
     }
     return contactos;
